@@ -7,13 +7,16 @@ let passwordLabel = login.children[1].children[1]
 login.onsubmit = (e)=>{
     let account = JSON.parse(localStorage.getItem('accounts'))
     let ok = false
-    account.forEach((user)=> {
+    let userid = 0
+    account.forEach((user,i)=> {
         if(user[0] === username.value && user[1] === password.value){
             ok = true;
+            userid = i
         }
     });
     if(ok){
         localStorage.setItem('signed','yes')
+        localStorage.setItem('currentUser',userid)
     }else{
         e.preventDefault()
     }

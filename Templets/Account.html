@@ -75,6 +75,8 @@
 
             </footer>
         </div>
-        <script src="/scripts/function.js"></script>
+        <script>
+            alert('Welcome ' + JSON.parse(localStorage.getItem('accounts'))[localStorage.getItem(`currentUser`)][0])
+        </script>
     </body>
 </html>
