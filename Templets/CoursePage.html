@@ -6,6 +6,152 @@
   <link rel="stylesheet" href="/CoursePage.css">
 </head>
 <body>
-    
+
+    <aside id="sidebar">
+        <h1>SuperEdu</h1>
+        <ul>
+            <li class="selected-page"><i class="fa-solid fa-house "></i><a>Home</a></li>
+            <li><i class="fa-solid fa-cloud"></i><a>Dashboard</a></li>
+            <li><i class="fa-regular fa-paper-plane"></i><a href="Templets/explore.html">Explore</a></li>
+            <li><i class="fa-regular fa-lightbulb"></i><a>AboutUs</a></li>
+            <li><i class="fa-solid fa-headphones"></i><a>Help & Support</a></li>
+        </ul>
+        <ul>
+            <li><i class="fa-regular fa-circle-user"></i><a href="Templets/Log_In.html">Account</a></li>
+            <li><i class="fa-regular fa-share-from-square"></i><a>Logout</a></li>
+        </ul>
+    </aside>
+
+  <div class="grid-container">
+    <header>
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <form action="">
+                <input type="search" placeholder="Search Anything">
+            </form>
+        </div>
+        <div class="account-conrer">
+            <i class="fa-solid fa-bell">
+                <div class="notification">You don't have any notifications</div>
+            </i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="checkbox-wrapper-51">
+                <input id="cbx-51" type="checkbox" onclick="theme()">
+                <label class="toggle" for="cbx-51" >
+                <span>
+                    <svg viewBox="0 0 10 10" height="10px" width="10px">
+                    <path d="M5,1 L5,1 C2.790861,1 1,2.790861 1,5 L1,5 C1,7.209139 2.790861,9 5,9 L5,9 C7.209139,9 9,7.209139 9,5 L9,5 C9,2.790861 7.209139,1 5,1 L5,9 L5,1 Z"></path>
+                    </svg>
+                </span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1633419469218-4c6c28b2f69e?fit=crop&w=600&q=80" alt="Data Analyst">
+      <h3>Data Analyst</h3>
+      <p>A Data Analyst collects, cleans, and interprets data using tools like Excel, SQL, and Tableau.</p>
+      <p><strong>If you like:</strong> Analyzing data, creating dashboards, working with spreadsheets.</p>
+      <strong>Credentials:</strong>
+      <ul>
+        <li>IBM Data Analyst</li>
+        <li>Google Data Analytics</li>
+        <li>Excel to MySQL</li>
+        <li>+ 2 more</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581091870622-1c79d2f0cb95?fit=crop&w=600&q=80" alt="Data Scientist">
+      <h3>Data Scientist</h3>
+      <p>Analyzes large datasets to uncover insights, using statistics, machine learning, and visualization.</p>
+      <p><strong>If you like:</strong> Building ML models, solving statistical problems, data-driven decisions.</p>
+      <strong>Credentials:</strong>
+      <ul>
+        <li>IBM Data Science</li>
+        <li>DeepLearning.AI TensorFlow</li>
+        <li>Applied Data Science</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1629904853893-5c1b0b4a94fa?fit=crop&w=600&q=80" alt="Machine Learning Engineer">
+      <h3>Machine Learning Engineer</h3>
+      <p>Builds and optimizes ML algorithms to enable computers to learn from data.</p>
+      <p><strong>If you like:</strong> Neural networks, big data, Python or R, automation.</p>
+      <strong>Credentials:</strong>
+      <ul>
+        <li>Machine Learning by Stanford</li>
+        <li>MathWorks Computer Vision</li>
+        <li>Advanced AI Engineering</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?fit=crop&w=600&q=80" alt="Data Warehouse Developer">
+      <h3>Data Warehouse Developer</h3>
+      <p>Designs and optimizes data warehouses, ensures efficient ETL workflows.</p>
+      <p><strong>If you like:</strong> Managing large datasets, ETL, ensuring fast queries.</p>
+      <strong>Credentials:</strong>
+      <ul>
+        <li>IBM Data Warehouse Engineer</li>
+        <li>BI with SQL & ETL</li>
+        <li>Data Warehousing on GCP</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?fit=crop&w=600&q=80" alt="Product Manager">
+      <h3>Product Manager</h3>
+      <p>Oversees product development and aligns with user needs and company strategy.</p>
+      <p><strong>If you like:</strong> Strategy, roadmaps, research, user-centered thinking.</p>
+      <strong>Credentials:</strong>
+      <ul>
+        <li>IBM Product Manager</li>
+        <li>AI Product Management</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1624395213138-482d276bf2aa?fit=crop&w=600&q=80" alt="Business Analyst">
+      <h3>Business / Management Analyst</h3>
+      <p>Analyzes operations and recommends data-driven strategies to boost productivity.</p>
+      <p><strong>If you like:</strong> Solving inefficiencies, business process improvement.</p>
+      <strong>Credentials:</strong>
+      <ul>
+        <li>Google Cloud Leader Training</li>
+        <li>Operations Analytics</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581092919535-5090baf7d0c1?fit=crop&w=600&q=80" alt="BI Analyst">
+      <h3>Business Intelligence Analyst</h3>
+      <p>Visualizes and interprets business data using tools like Tableau & Power BI.</p>
+      <p><strong>If you like:</strong> Dashboards, trends, business decision support.</p>
+      <strong>Credentials:</strong>
+      <ul>
+        <li>Microsoft Power BI Analyst</li>
+        <li>IBM BI Analyst</li>
+        <li>+ 2 more</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1610484826967-3cfa357ad7d1?fit=crop&w=600&q=80" alt="Data Engineer">
+      <h3>Data Engineer</h3>
+      <p>Builds systems and pipelines to manage big data, using tools like Spark & Hadoop.</p>
+      <p><strong>If you like:</strong> Automating data workflows, backend data management.</p>
+      <strong>Credentials:</strong>
+      <ul>
+        <li>IBM Data Engineering</li>
+        <li>Google Data Engineer Path</li>
+      </ul>
+    </div>
+
+  </div>
+
 </body>
 </html>
+
