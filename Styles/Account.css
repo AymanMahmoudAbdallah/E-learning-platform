@@ -1,0 +1,182 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 220px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background-color: #2e3a59;
+    color: white;
+    padding: 20px;
+}
+
+#sidebar h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#sidebar li {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#sidebar li i {
+    margin-right: 10px;
+}
+
+#sidebar li a {
+    color: white;
+    text-decoration: none;
+}
+
+.selected-page {
+    font-weight: bold;
+    color: #00aced;
+}
+
+/* Header */
+header {
+    margin-left: 220px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 6px 10px;
+    margin-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.account-conrer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification {
+    position: absolute;
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    display: none;
+    border-radius: 4px;
+    top: 45px;
+}
+
+.fa-bell:hover .notification {
+    display: block;
+}
+
+/* Toggle switch */
+.checkbox-wrapper-51 input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-wrapper-51 .toggle {
+    background: #ccc;
+    border-radius: 50px;
+    padding: 5px;
+    cursor: pointer;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    position: relative;
+}
+
+.checkbox-wrapper-51 .toggle span {
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    height: 14px;
+    width: 14px;
+    transition: 0.3s;
+}
+
+.checkbox-wrapper-51 input[type="checkbox"]:checked + .toggle span {
+    transform: translateX(20px);
+    background-color: #2e3a59;
+}
+
+/* Main table layout */
+table {
+    margin-left: 220px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+td {
+    vertical-align: top;
+    padding: 20px;
+}
+
+td:first-child {
+    background-color: #f0f2f5;
+}
+
+td h2, td h3 {
+    margin-top: 0;
+}
+
+/* Avatar */
+td div[style*="border-radius:50%"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Buttons */
+button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
