@@ -1,70 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Profile</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body style="margin: 0; font-family: Arial, sans-serif;">
-
-    <!-- Top Navbar -->
-    <nav style="background-color: #333; padding: 10px 20px; color: white; display: flex; justify-content: space-between; align-items: center; position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;">
-        <!-- Logo -->
-        <div style="font-size: 24px; font-weight: bold;">SuperEdu</div>
-
-        <!-- Search Bar -->
-        <form action="#" method="get" style="display: flex; align-items: center;">
-            <input type="text" placeholder="Search..." style="padding: 5px; font-size: 14px; border: 1px solid #ccc; border-radius: 4px; width: 250px;">
-            <button type="submit" style="padding: 5px 10px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; margin-left: 10px;">Search</button>
-        </form>
-
-        <!-- Nav Options -->
-        <div style="display: flex; align-items: center; gap: 20px; margin-left: 20px;">
-            <select style="padding: 5px; border-radius: 4px;">
-                <option value="en">English</option>
-                <option value="ar">Arabic</option>
-                <option value="fr">French</option>
-            </select>
-            <a href="#" style="color: white; text-decoration: none;">Careers</a>
-            <a href="#" style="color: white; text-decoration: none;">Degree</a>
-            <a href="#" style="color: white; text-decoration: none;">🛒 Cart</a>
-        </div>
-    </nav>
-
-    <!-- Sidebar -->
-    <aside id="sidebar" style="width: 230px; background-color: #333; color: white; padding: 20px; position: fixed; top: 60px; left: 0; height: 100%; box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);">
-        <ul style="list-style: none; padding: 0;">
-            <li><a href="#" style="color: white; text-decoration: none; padding: 10px 0; display: block;">Home</a></li>
-            <li><a href="#" style="color: white; text-decoration: none; padding: 10px 0; display: block;">Dashboard</a></li>
-            <li><a href="Templets/explore.html" style="color: white; text-decoration: none; padding: 10px 0; display: block;">Explore</a></li>
-            <li><a href="#" style="color: white; text-decoration: none; padding: 10px 0; display: block;">About Us</a></li>
-            <li><a href="#" style="color: white; text-decoration: none; padding: 10px 0; display: block;">Help & Support</a></li>
-        </ul>
-        <ul style="list-style: none; padding: 0; margin-top: 20px;">
-            <li><a href="Templets/Log_In.html" style="color: white; text-decoration: none; padding: 10px 0; display: block;">Account</a></li>
-            <li><a href="#" style="color: white; text-decoration: none; padding: 10px 0; display: block;">Logout</a></li>
-        </ul>
-    </aside>
-
-    <!-- Main Content -->
-    <div style="margin-left: 250px; padding: 20px; margin-top: 80px;">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>my profile</title>
+    </head>
+    <body>
+        <aside id="sidebar">
+            <h1>SuperEdu</h1>
+            <ul>
+                <li class="selected-page"><i class="fa-solid fa-house "></i><a>Home</a></li>
+                <li><i class="fa-solid fa-cloud"></i><a>Dashboard</a></li>
+                <li><i class="fa-regular fa-paper-plane"></i><a href="Templets/explore.html">Explore</a></li>
+                <li><i class="fa-regular fa-lightbulb"></i><a>AboutUs</a></li>
+                <li><i class="fa-solid fa-headphones"></i><a>Help & Support</a></li>
+            </ul>
+            <ul>
+                <li><i class="fa-regular fa-circle-user"></i><a href="Templets/Log_In.html">Account</a></li>
+                <li><i class="fa-regular fa-share-from-square"></i><a>Logout</a></li>
+            </ul>
+        </aside>
+        <div id="continer">
+            <!-- ____Static in most pages___ -->
+             <!-- ________________Header__________________ -->
+            <header>
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <form action="">
+                        <input type="search" placeholder="Search Anything">
+                    </form>
+                </div>
+                <div class="account-conrer">
+                    <i class="fa-solid fa-bell">
+                        <div class="notification">You don't have any notifications</div>
+                    </i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="checkbox-wrapper-51">
+                        <input id="cbx-51" type="checkbox" onclick="theme()">
+                        <label class="toggle" for="cbx-51" >
+                        <span>
+                            <svg viewBox="0 0 10 10" height="10px" width="10px">
+                            <path d="M5,1 L5,1 C2.790861,1 1,2.790861 1,5 L1,5 C1,7.209139 2.790861,9 5,9 L5,9 C7.209139,9 9,7.209139 9,5 L9,5 C9,2.790861 7.209139,1 5,1 L5,9 L5,1 Z"></path>
+                            </svg>
+                        </span>
+                        </label>
+                    </div>
+                </div>
+            </header>
         <table border="1" width="100%" cellpadding="10">
             <tr>
                 <td width="50%" valign="top">
-                    <h2>User Name</h2>
-                    <div style="width:100px; height:100px; background-color:black; color:white; border-radius:50%; font-size:50px; line-height:100px; text-align:center;">
+                    <h2>User name</h2>
+                    <div style="width:100px; height:100px; background-color:black; color:white; border-radius:50%; font-size:50px; line-height:100px;">
                         A    
                     </div>    
                     <br>
-                    <button>🔗 Share Profile Link</button><br><br>
-                    <a href="#">Update Profile Visibility</a><br><br>
-                    <h3>Work Preferences</h3>
-                    <b>Desired Roles</b>
+                    <button>🔗 share profile link</button><br><br>
+                    <a href="#">Update profile visibility</a><br><br>
+                    <h3> Work preferences</h3> 
+                    <b>Desired roles</b>
                     <ul align="left">
                         <li>Data Scientist</li>
                         <li>Data Analyst</li>
                         <li>Data Warehouse Developer</li>
-                    </ul>
+                    </ul>         
                 </td>
                 <td width="70%" valign="top">
                     <h2>Experience</h2>
@@ -76,23 +75,23 @@
                         <br><br><a href="#">Browse Projects</a>
                     </p>
 
-                    <h3>Work History</h3>
-                    <p>
+                    <h3>Work history</h3>
+                    <P>
                         Add your past work experience here. If you’re just starting out, you can add internships or volunteer experience instead.
-                        <button>+ Add Work Experience</button>
-                    </p>
+                        <button>+ Add work experience</button>
+                    </P>
 
                     <h2>Education</h2>
                     <h3>Credentials</h3>
                     <p>
                         Add your educational background here to let employers know where you studied or are currently studying.
-                        <button>+ Add Education</button>
+                        <button>+  Add education</button>
                     </p>
                     Get job-ready with role-based training from industry-leading companies like Google, Meta, and IBM.
                     <a href="#">Browse Professional Certificates</a>
                 </td>
             </tr>
         </table>
-    </div>
-</body>
+      
+    </body>
 </html>
