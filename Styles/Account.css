@@ -1,77 +1,15 @@
-/* style.css */
-
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f7fa;
-    color: #333;
+body{
+    display: grid;
+    grid-template-columns: .2fr 1fr;
+    height: 100vh;
+    background-color: var(--background-c1);
+    transition-duration: 0.3s;
 }
 
-/* Sidebar */
-#sidebar {
-    width: 220px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    background-color: #2e3a59;
-    color: white;
-    padding: 20px;
-}
 
-#sidebar h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
 
-#sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 30px;
-}
-
-#sidebar li {
-    margin: 15px 0;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-#sidebar li i {
-    margin-right: 10px;
-}
-
-#sidebar li a {
-    color: white;
-    text-decoration: none;
-}
-
-.selected-page {
-    font-weight: bold;
-    color: #00aced;
-}
-
-/* Header */
-header {
-    margin-left: 220px;
-    height: 60px;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 30px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-}
-
-.search-bar input {
-    padding: 6px 10px;
-    margin-left: 10px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+.continer{
+    padding-left: 3vw;
 }
 
 .account-conrer {
@@ -80,103 +18,187 @@ header {
     gap: 20px;
 }
 
-.notification {
-    position: absolute;
-    background: #333;
-    color: white;
-    padding: 5px 10px;
-    font-size: 12px;
-    display: none;
-    border-radius: 4px;
-    top: 45px;
+.divoutborder{
+    display: flex;
+    width: 78vw;
+    height: 38vw;
+   
 }
 
-.fa-bell:hover .notification {
-    display: block;
+
+.div1{
+height: 100%;
+width:22% ;
+border: 1px solid #242a2f;
+background-color: #0848634a;
 }
 
-/* Toggle switch */
-.checkbox-wrapper-51 input[type="checkbox"] {
-    display: none;
-}
+.div2{
 
-.checkbox-wrapper-51 .toggle {
-    background: #ccc;
-    border-radius: 50px;
-    padding: 5px;
-    cursor: pointer;
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    position: relative;
-}
-
-.checkbox-wrapper-51 .toggle span {
-    background: white;
-    border-radius: 50%;
-    position: absolute;
-    left: 3px;
-    top: 3px;
-    height: 14px;
-    width: 14px;
-    transition: 0.3s;
-}
-
-.checkbox-wrapper-51 input[type="checkbox"]:checked + .toggle span {
-    transform: translateX(20px);
-    background-color: #2e3a59;
-}
-
-/* Main table layout */
-table {
-    margin-left: 220px;
-    margin-top: 20px;
-    border-collapse: collapse;
-    background-color: white;
-}
-
-td {
-    vertical-align: top;
-    padding: 20px;
-}
-
-td:first-child {
-    background-color: #f0f2f5;
-}
-
-td h2, td h3 {
-    margin-top: 0;
-}
-
-/* Avatar */
-td div[style*="border-radius:50%"] {
+    height: 50%;
+    width:100% ;
+    border: 1px solid #242a2f;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #007bff;
-    font-size: 50px;
-    font-weight: bold;
+    flex-wrap: wrap;
 }
 
-/* Buttons */
-button {
-    padding: 8px 12px;
-    background-color: #007bff;
+.pic{
+    width: 100%;
+    height: 32%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pic img{
+    height: 9vw;
+    width: 9vw;
+    border-radius: 50%;
+}
+
+.info{
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.info h1 {
+    font-size: 1.5vw;
+    display: block;
+}
+
+
+.btns{
+    margin-top: 1vw;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btns button {
+    width: 100%;
+    height: 15%;
+    background-color:aliceblue;
     border: none;
-    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+    left: 3vw;
+    text-align:left ;
+    font-size: 1vw;
+    color: rgb(90, 89, 89);
+    background-color:rgba(0, 0, 0, 0);
+    padding-left: 5%;
+
+}   
+
+.basic {
+    width: 90%;
+    height: 3vw;
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.div2 input {
+    border: 1px solid gray;
+    background-color: #0848634a;
+
+
+}
+
+
+.headd{
+    width:95% ;
+height: 15%;
+}
+
+.headd h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.links{
+    width: 100%;
+    height: 50%;
+    background-color: blueviolet;
+}
+
+
+.selectedbtn{
+    width: 100%;
+    height: 15%;
+    background-color:aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    left: 3vw;
+    text-align:left ;
+    font-size: 1vw;
+    color: rgb(90, 89, 89);
+    background-color:deepskyblue;
+}
+
+.darkmodebtn{
+    width: 100%;
+    height: 15%;
+    background-color:aliceblue;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    left: 3vw;
+    text-align:left ;
+    font-size: 1vw;
+    color: #0848634a;
+    background-color: #00000000;
+}
+
+.div4 {
+    height: 40%;
+    width:100% ;
+    border: 1px solid #242a2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.div4 input {
+    border: 1px solid gray;
+    background-color: #0848634a;
+
+
+}
+
+
+#btn1{
     color: white;
+    background-color:rgba(116, 101, 127, 0.388);
+}
+.divbtnshowpass{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: end;
+}
+.showpass{
+    height: 100%;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 5px;
+    border: 1px solid gray ;
+    font-size: 1vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+h1{
+    font-size: 3vw;
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
+input{
+    font-size: 1vw;
 }
 
-a:hover {
-    text-decoration: underline;
-}
